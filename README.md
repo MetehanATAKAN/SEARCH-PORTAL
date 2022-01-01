@@ -3,6 +3,8 @@ The project is written in react and redux.
 
 ---
 
+Click the link for the live test => [TESODEV SEARCH PORTAL](https://tesodev-search-portal.netlify.app/)
+
 # Project Preview
 ![image](https://user-images.githubusercontent.com/80483297/147841059-d871879a-0b47-40cf-99f3-330f42b1e745.png)
 ----------------------------------------------------------------------------------------------------------------
