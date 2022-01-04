@@ -8,8 +8,6 @@
 }
 .list-page {
   margin: 27px 37px auto 37px;
-  margin-left: 37px;
-  margin-top: 27px;
 }
 .header {
   margin: auto;
@@ -268,6 +266,14 @@
 .search-bar button {
   margin-top: 15px;
 }
+@media screen and (max-width:735px) {
+  .list-page{
+    margin: 27px 0 auto 0;
+  }
+  .list-page-list {
+    width: auto;
+  }
+}
 @media screen and (max-width: 668px) {
   .list-div{
     display: flex;
@@ -287,5 +293,10 @@
     line-height: 21px;
     color: #484848;
 }
+}
+@media screen and (max-width: 360px) {
+  .list-page {
+    width: fit-content;
+  }
 }
 }

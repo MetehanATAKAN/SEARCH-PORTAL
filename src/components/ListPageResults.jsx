@@ -4,6 +4,7 @@ import "../App.css"
 import orderıcon from "../orderıcon.png";
 import {searchInputValue, NameAscending, NameDescending, YearAscending, YearDescending } from '../redux/slices/SearchSlice';
 
+
 const ListPageResults=()=> {
 
     const [order, setorder] = useState(false);
@@ -14,8 +15,8 @@ const ListPageResults=()=> {
     const buttonNumber = useSelector(state => state.search.pageButtonsCount);
     const errorTextCounter = useSelector(state => state.search.errorTextCounter);
 
+   
     
-
    const searchButton=()=>{       
     if(value!==""){
         dispatch(searchInputValue(value));

@@ -1,18 +1,15 @@
 import React from 'react'
-import {useSelector,useDispatch} from "react-redux";
-import {persons} from "../redux/slices/SearchSlice";
+import {useSelector} from "react-redux";
 import { Link } from 'react-router-dom';
 import "../App.css"
-import datajson from "../json/data.json"
+
 
 const SearchBarResults=()=> {
 
-    const dispatch = useDispatch();
     const data = useSelector(state => state.search.filterData);
     const errorTextCounter = useSelector(state => state.search.errorTextCounter);
 
-    dispatch(persons(datajson.data));
- 
+   
     return (
         <>        
             <div className='search-results'>

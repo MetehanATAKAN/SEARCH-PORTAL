@@ -3,18 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 export const SearchSlice=createSlice({
     name:"search",
     initialState:{
-        data:[],
         filterData:[],
         pageButtonsCount:[],
         errorTextCounter:0,
     },
-    reducers:{
-        persons:(state,action)=>{
-            state.data=action.payload;
-        },
+    reducers:{   
         searchInputValue:(state,action)=>{
            let count;
-           const filterData= state.data.filter((person)=>{
+           const filterData= JSON.parse(localStorage.getItem("data")).filter((person)=>{
                 return Object.keys(person).some((key)=>
                 person[key]
                 .toString()
