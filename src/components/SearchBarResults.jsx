@@ -1,14 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {useSelector} from "react-redux";
 import { Link } from 'react-router-dom';
 import "../App.css"
-
+import dataJson from "../json/data.json" ;
 
 const SearchBarResults=()=> {
 
     const data = useSelector(state => state.search.filterData);
     const errorTextCounter = useSelector(state => state.search.errorTextCounter);
 
+    useEffect(() => {
+        localStorage.setItem("data",JSON.stringify(dataJson.data));
+    },[])
    
     return (
         <>        
